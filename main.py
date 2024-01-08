@@ -20,11 +20,3 @@ print("Insertion sort time for length 5000: {:>28}"
       .format(timeit.timeit(lambda: insertion_sort(random_numbers_5000.copy()), number=5)))
 print("Timsort sort time for length   5000: {:>28}"
       .format(timeit.timeit(lambda: random_numbers_5000.sort(), number=5)))
-
-# Як видно з результатів роботи, вище вказані функції витрачають на сортування різний час роботи.
-
-# Найдовше сортує алгоритм сортування Insertion sort, особливо коли довжина списку 5000 елементів (більше 7 секунд)
-
-# На другому місці алгоритм сортування Merge sort.
-
-# Найшвидше працює алгоритм сортування Timsort, який поєднує у собі два вищевказаних алгоритми.
